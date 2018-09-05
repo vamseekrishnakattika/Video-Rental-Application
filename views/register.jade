@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container
+    h1 Register Page
+    p.lead Enter the following details to register.
+    br
+    form(role='form', action="/register",method="post", style='max-width: 300px;')
+      .form-group
+          input.form-control(type='text', name="username", placeholder='Your Username here')
+      .form-group
+        input.form-control(type='password', name="password", placeholder='Your Password here')
+      button.btn.btn-default(type='submit') Register
+      &nbsp;
+      a(href='/')
+        button.btn.btn-primary(type="button") Cancel

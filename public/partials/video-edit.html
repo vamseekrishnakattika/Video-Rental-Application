@@ -1,0 +1,17 @@
+<h1>Edit Your Video</h1>
+<br/>
+<h5>Update the details of your video.</h5>
+<br/>
+<form>
+	<!--<img ng-src="{{picture.picture+video.title}}.jpg"/>-->
+    <img src="images/{{video.title}}.jpg" alt="Image here"/>
+    <div class="form-group">
+        <label>Title</label>		
+        <input class="form-control" ng-model="video.title"></input>
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <textarea class="form-control" ng-model="video.description"></textarea>
+    </div>
+    <input type="button" class="btn btn-primary" value="Save" ng-click="save()"></input>
+</form>
